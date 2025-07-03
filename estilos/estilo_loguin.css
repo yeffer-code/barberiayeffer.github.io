@@ -1,0 +1,109 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #3c3c3a, #c8c8c7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #803d02;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d35400;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 22px;
+      color: #2c3e50;
+    }
+
+    /* estilo inicio sesion*/
+    register-link {
+    margin-top: 20px; /* Espacio superior para separarlo del botón de Ingresar */
+    text-align: center; /* Centra el texto y el enlace */
+}
+
+.register-link p {
+    font-size: 0.9em;
+    color: #555; /* Color del texto del párrafo */
+    margin-bottom: 10px; /* Espacio entre el texto y el enlace/botón */
+}
+
+.register-link a {
+    color: #007bff; /* Color azul para el enlace, o el que prefieras */
+    text-decoration: none; /* Quita el subrayado por defecto */
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline; /* Subraya al pasar el ratón */
+}
+
+/* Si usas el botón de registro */
+.register-button {
+    background-color: #28a745; /* Un color verde, por ejemplo */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px; /* Espacio superior */
+    width: 100%; /* Para que ocupe todo el ancho si lo deseas */
+}
+
+.register-button:hover {
+    background-color: #218838;
+}

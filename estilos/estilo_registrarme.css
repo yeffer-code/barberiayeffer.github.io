@@ -1,0 +1,183 @@
+/* Importar una fuente de Google Fonts (opcional, pero mejora la estética) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Estilos generales para el body */
+body {
+    background: linear-gradient(135deg, #2a2a29 0%, #e6e5e3 100%); /* Degradado diagonal amarillo a anaranjado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que ocupe al menos la altura de la ventana */
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Usamos la fuente importada */
+    color: #333;
+    -webkit-font-smoothing: antialiased; /* Suaviza el texto en navegadores webkit */
+    -moz-osx-font-smoothing: grayscale; /* Suaviza el texto en Firefox */
+}
+
+/* Contenedor principal del formulario de registro */
+.register-container {
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    padding: 45px 35px; /* Más padding para una sensación más espaciosa */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    width: 100%;
+    max-width: 480px; /* Ancho máximo ligeramente mayor */
+    text-align: center;
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho/alto */
+}
+
+/* Estilos del encabezado */
+.header h2 {
+    color: #2c3e50; /* Un color oscuro para el título */
+    margin-bottom: 10px;
+    font-size: 2.2em; /* Título un poco más grande */
+    font-weight: 700; /* Más negrita */
+}
+
+.header p {
+    color: #7f8c8d; /* Color más suave para el subtítulo */
+    margin-bottom: 35px; /* Más espacio debajo del subtítulo */
+    font-size: 1.05em;
+}
+
+/* Estilos para cada grupo de input (etiqueta + campo) */
+.input-group {
+    margin-bottom: 22px; /* Espacio entre grupos de inputs */
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px; /* Espacio entre etiqueta y campo */
+    font-weight: 600; /* Ligeramente más negrita */
+    color: #34495e; /* Color oscuro para las etiquetas */
+    font-size: 0.95em;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: calc(100% - 24px); /* Ancho completo menos padding */
+    padding: 8px 8px; /* Más padding para los campos */
+    border: 1px solid #dfe6e9; /* Borde suave */
+    border-radius: 8px; /* Bordes redondeados para inputs */
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave al enfocar */
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="email"]:focus,
+.input-group input[type="password"]:focus {
+    border-color: #FFA500; /* Borde naranja al enfocar */
+    outline: none; /* Eliminar el contorno por defecto */
+    box-shadow: 0 0 8px rgba(255, 165, 0, 0.3); /* Sombra suave al enfocar */
+}
+
+/* Estilos para la casilla de términos y condiciones */
+.terms-checkbox {
+    text-align: left;
+    margin-top: 15px; /* Espacio arriba */
+    margin-bottom: 30px; /* Espacio debajo */
+    font-size: 0.9em;
+    color: #666;
+    display: flex; /* Para alinear el checkbox y el texto */
+    align-items: center;
+}
+
+.terms-checkbox input[type="checkbox"] {
+    margin-right: 10px; /* Espacio entre el checkbox y el texto */
+    transform: scale(1.1); /* Hace el checkbox un poco más grande */
+    cursor: pointer;
+}
+
+.terms-checkbox a {
+    color: #007bff; /* Color azul para el enlace (puedes cambiarlo a un naranja también) */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.terms-checkbox a:hover {
+    text-decoration: underline;
+    color: #FFA500; /* Naranja al pasar el ratón */
+}
+
+/* Estilos para el botón de registro */
+.register-button {
+    background-color: #FFA500; /* Naranja vibrante para el botón */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px; /* Bordes más redondeados */
+    cursor: pointer;
+    font-size: 1.15em; /* Fuente un poco más grande */
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+    box-shadow: 0 4px 10px rgba(255, 165, 0, 0.3); /* Sombra para el botón */
+}
+
+.register-button:hover {
+    background-color: #FF8C00; /* Naranja más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Efecto ligero de "levantamiento" */
+}
+
+.register-button:active {
+    transform: translateY(0); /* Vuelve a la posición original al hacer click */
+    box-shadow: 0 2px 5px rgba(255, 165, 0, 0.4);
+}
+
+/* Estilos para el mensaje de "Ya tienes cuenta?" */
+.login-prompt {
+    margin-top: 30px; /* Más espacio arriba */
+    font-size: 0.95em;
+    color: #666;
+}
+
+.login-prompt a {
+    color: #007bff; /* Azul para el enlace de login, o el que prefieras */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-prompt a:hover {
+    text-decoration: underline;
+    color: #FFA500; /* Naranja al pasar el ratón */
+}
+
+/* Media queries para responsividad (ajustes en pantallas más pequeñas) */
+@media (max-width: 600px) {
+    .register-container {
+        padding: 30px 20px; /* Ajusta el padding en pantallas pequeñas */
+        margin: 20px; /* Margen para evitar que toque los bordes */
+        border-radius: 10px;
+    }
+
+    .header h2 {
+        font-size: 1.8em;
+    }
+
+    .header p {
+        font-size: 0.95em;
+        margin-bottom: 25px;
+    }
+
+    .input-group input {
+        padding: 10px;
+    }
+
+    .register-button {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    .terms-checkbox {
+        font-size: 0.85em;
+    }
+
+    .login-prompt {
+        font-size: 0.85em;
+    }
+}

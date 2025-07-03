@@ -1,0 +1,597 @@
+/* Estilos para el HEADER */
+header {
+    display: flex;
+    justify-content: space-between; /* Alinea el logo a un lado y la nav al otro */
+    align-items: center; /* Centra verticalmente */
+    background: linear-gradient(to right, #434341, #bebdbb); /* da un color degradado *//* Un color de fondo para tu header */
+    padding: 10px 20px; /* Padding para el header */
+    color: rgb(237, 0, 0); /* Color de texto general para el header */
+}
+
+/* Estilos para la NAVEGACIÓN */
+nav {
+    display: flex; /* Habilitar flexbox para los elementos dentro de nav */
+    align-items: center; /* Centrar verticalmente los elementos de nav */
+    /* Si tienes muchos enlaces, puedes usar justify-content: space-between;
+       o gap para espaciarlos */
+}
+
+nav a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none;
+    margin-left: 20px; /* Espacio entre los enlaces de la navegación */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 5px 0; /* Padding vertical para hacer clic más fácil */
+    transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+nav a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none;
+    margin-left: 20px; /* Espacio entre los enlaces de la navegación */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 5px 0; /* Padding vertical para hacer clic más fácil */
+    transition: color 0.3s ease; /* Transición suave para el hover */
+}
+nav a:hover {
+    color: #ffcc00; /* Color al pasar el ratón por los enlaces */
+}
+
+
+
+user-profile-widget-link
+
+  /*estilo para  contenedor*/
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdf8f6;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.left {
+  max-width: 40%;
+}
+
+.left h2 {
+  font-weight: normal;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.left h1 {
+  color: #f26c26;
+  font-size: 36px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.left p {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.left button {
+  background-color: #f26c26;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.images {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 50%;
+}
+
+.images img {
+  width: 48%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.logo {
+  width: 100px;
+  margin-top: 20px;
+}
+/*adaptarse a dispositivo mivil*/
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left, .images {
+    max-width: 100%;
+  }
+
+  .images img {
+    width: 100%;
+  }
+  
+  .texto-banner{
+    width: 100%;
+  }
+}
+/*estilo parala frase  principal*/
+   .texto-banner {
+  position: absolute;
+  /*centrea la clase*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  font-style: oblique;
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.0);
+}
+
+
+
+/* estilo para servicios*/
+.servicios {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.servicios h2 {
+  font-size: 32px;
+  margin: 10px 0;
+  color: #333;
+}
+
+
+.servicios .decoracion {
+  width: 40px;
+  margin: 10px 0 30px;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tarjeta {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 30px 20px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.tarjeta img {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.tarjeta h4 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta {
+    width: 90%;
+  }
+}
+
+
+/* estilo para la seccion de cita*/
+.seccion-cita {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 400px;
+}
+
+.imagen-cita {
+  flex: 1;
+  background-image: url("img/tipos-de-corte-de-cabello-para-hombres.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+}
+
+.contenido-cita {
+  flex: 1;
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.contenido-cita h2 {
+  margin-bottom: 10px;
+}
+
+.formulario {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-reservar {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-reservar:hover {
+  background-color: #45a049;
+}
+
+/*estilo seccion empleados*/
+.empleados {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.empleados .decoracion {
+  width: 60px;
+  margin: 10px 0 30px;
+}
+
+/* Estilos para la sección principal que contiene los barberos */
+.empleados {
+    text-align: center; /* Para centrar el título y la decoración si lo deseas */
+    padding: 20px; /* Espacio alrededor de la sección */
+}
+
+/* Estilos para el contenedor de las tarjetas de empleados */
+.empleados .tarjeta-empleados {
+    display: inline-block; /* Esto los pondrá uno al lado del otro si hay espacio */
+    vertical-align: top; /* Alinea las tarjetas por arriba si tienen diferentes alturas */
+    margin: 15px; /* Espacio entre las tarjetas */
+    border: 1px solid #ddd; /* Un borde sutil para cada tarjeta */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Asegura que la imagen no se salga del borde redondeado */
+    width: 300px; /* Ancho fijo para cada tarjeta (ajusta según necesites) */
+    /* Para que las imágenes dentro de la tarjeta se ajusten */
+    max-width: 100%; /* Asegura que no se desborden si el ancho es menor */
+}
+
+.empleados .tarjeta-empleados img {
+    max-width: 100%; /* La imagen ocupará el 100% del ancho de su tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio extra que a veces aparece debajo de las imágenes */
+}
+
+
+/* Estilos para el Precio */
+
+.Precios {
+  text-align: center;
+  padding: 60px 20px;
+  color: blue;
+}
+
+/*estilo para un ubicaciones*/
+.ubicaciones{
+  text-align: center;
+  padding: 60 px 20px;
+  color: #007bff;
+}
+
+/* Estilos footer  */
+
+/* Estilos para el footer */
+/* Estilos generales para el cuerpo de la página (opcional) */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para que el footer se quede abajo */
+}
+
+/* Estilos para el footer */
+/* Estilos generales para el cuerpo de la página (opcional) */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para que el footer se quede abajo */
+}
+
+/* Estilos para el footer */
+.footer {
+     background: linear-gradient(to right, #bebdbb, #434341);
+    color: #ffffff; /* Texto blanco */
+    padding: auto;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px; /* Ancho máximo para el contenido del footer */
+    margin: 0 auto; /* Centrar el contenido */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.footer-info {
+    flex: 1; /* Permite que la información ocupe espacio */
+    min-width: 250px; /* Ancho mínimo para la información */
+}
+.social-icons {
+    display: flex;
+    gap: 15px; /* Espacio entre los iconos */
+    margin: 10px 0; /* Margen para pantallas pequeñas */
+}
+
+.social-icons img {
+    width: 30px; /* Tamaño de los iconos */
+    height: 30px;
+    filter: invert(100%); /* Hace que los iconos sean blancos si son negros originalmente */
+}
+
+.social-icons a {
+    display: block; /* Asegura que la imagen sea el bloque clicable */
+}
+
+.footer-logo {
+    text-align: right;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Tamaño máximo del logo */
+    height: auto;
+}
+
+
+
+
+
+    #sucursales {
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+
+    .sucursal {
+        background: white;
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        font-size: 24px;
+        color: #333;
+    }
+
+
+    /*estilo para preccio*/
+    
+    
+
+#precios h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.separador {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.contenedor-columnas {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.columna {
+    width: 32%;
+}
+
+.titulo-categoria {
+    background-color: #f97316;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.servicio {
+    margin-bottom: 20px;
+}
+
+.encabezado-servicio {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 5px;
+}
+
+.servicio p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+
+/* Estilos generales para la sección de ubicaciones */
+.ubicaciones {
+    text-align: center; /* Centra el título "Nuestras Ubicaciones" */
+    padding: 40px 20px; /* Agrega un poco de relleno arriba/abajo y a los lados */
+    background-color: #f9f9f9; /* Un color de fondo suave para la sección */
+    border-bottom: 5px solid #ffcc00; /* La línea amarilla en la parte inferior */
+}
+
+.ubicaciones h2 {
+    font-size: 2.5em; /* Tamaño del título principal */
+    color: #333; /* Color del texto del título */
+    margin-bottom: 30px; /* Espacio debajo del título */
+}
+
+/* Estilos para la tarjeta que contiene la información y la imagen */
+.tarjeta-sucursales {
+    display: flex; /* Habilita Flexbox para colocar los elementos en fila */
+    justify-content: center; /* Centra los elementos (info y imagen) horizontalmente */
+    align-items: flex-start; /* Alinea los elementos al inicio (arriba) de la línea */
+    gap: 60px; /* Espacio entre la información y la imagen */
+    max-width: 1000px; /* Limita el ancho máximo de la tarjeta */
+    margin: 0 auto; /* Centra la tarjeta en la página */
+    padding: 30px; /* Relleno dentro de la tarjeta */
+    background-color: #ffffff; /* Fondo blanco para la tarjeta */
+    border-radius: 12px; /* Esquinas ligeramente redondeadas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+}
+
+/* Estilos para el div que contiene la información de las sucursales */
+.info {
+    flex: 1; /* Permite que este div ocupe el espacio disponible */
+    text-align: left; /* Alinea el texto dentro de este div a la izquierda */
+    padding-right: 20px; /* Pequeño relleno a la derecha para separar del mapa */
+}
+
+.info h1 { /* Cambiado a h1 como en tu HTML */
+    font-size: 2em; /* Tamaño del título "Sucursales:" */
+    color: #007bff; /* Color azul para el título de sucursales */
+    margin-bottom: 20px; /* Espacio debajo del título "Sucursales:" */
+}
+
+.info p {
+    font-size: 1.1em; /* Tamaño del texto de las direcciones */
+    color: #000000; /* Color del texto de las direcciones */
+    margin-bottom: 10px; /* Espacio entre cada dirección */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+}
+
+/* Estilos para la imagen del mapa */
+.tarjeta-sucursales img {
+    max-width: 450px; /* Limita el ancho máximo de la imagen (ajusta según tu imagen) */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 8px; /* Esquinas redondeadas para la imagen */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra para la imagen */
+    display: block; /* Elimina cualquier espacio extra debajo de la imagen */
+}
+
+/* Media Queries para hacer el diseño responsivo en pantallas más pequeñas */
+@media (max-width: 900px) {
+    .tarjeta-sucursales {
+        flex-direction: column; /* Apila la información y la imagen verticalmente */
+        align-items: center; /* Centra los elementos cuando están apilados */
+        gap: 30px; /* Reduce el espacio cuando están apilados */
+    }
+
+    .info {
+        text-align: center; /* Centra el texto de las sucursales cuando están apilados */
+        padding-right: 0; /* Elimina el relleno a la derecha */
+    }
+
+    .info h1 {
+        font-size: 1.8em; /* Ajusta el tamaño del título de sucursales */
+    }
+
+    .info p {
+        font-size: 1em; /* Ajusta el tamaño del texto de las direcciones */
+    }
+
+    .tarjeta-sucursales img {
+        max-width: 50%; /* La imagen ocupará el 90% del ancho del contenedor */
+    }
+}
+
+@media (max-width: 500px) {
+    .ubicaciones h2 {
+        font-size: 2em; /* Ajusta el tamaño del título principal para móviles */
+    }
+
+    .tarjeta-sucursales {
+        padding: 20px; /* Reduce el relleno de la tarjeta */
+    }
+}
+
+/* Estilos generales para la barra de navegación */
+.main-navbar {
+    background-color: #333; /* Un fondo oscuro para la barra de navegación */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    color: white; /* Color de texto predeterminado para la nav */
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Para que los elementos de la lista estén en línea */
+}
+
+.main-navbar ul li {
+    margin-right: 20px;
+}
+
+.main-navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.main-navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+
